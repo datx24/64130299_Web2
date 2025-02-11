@@ -4,5 +4,6 @@
 
 # Bài Tập: BMI Calculator
 
-![BMI Calculator](images/bmi_calculator.png)
+![BMI Calculator](https://github.com/datx24/64130299_Web2/blob/main/BMI_Serverlet/Screenshot%202025-02-11%20172837.png)
+![BMI Calculator](https://github.com/datx24/64130299_Web2/blob/main/BMI_Serverlet/Screenshot%202025-02-11%20172848.png)
 
