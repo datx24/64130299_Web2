@@ -41,16 +41,18 @@ public class AboutMe extends HttpServlet {
         out.println("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>");
         out.println("<style>");
         out.println("body { background-color: #f8f9fa; font-family: Arial, sans-serif; }");
-        out.println(".container { max-width: 600px; margin-top: 50px; }");
+        out.println(".container { max-width: 600px; }");
         out.println(".card { border-radius: 15px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }");
         out.println(".card-header { background: linear-gradient(to right, #007bff, #00c6ff); color: white; }");
         out.println(".avatar { width: 120px; height: 120px; border-radius: 50%; display: block; margin: 10px auto; }");
         out.println(".info-item { font-size: 18px; margin-bottom: 10px; display: flex; align-items: center; }");
-        out.println(".info-item i { width: 40px; text-align: center; color: #007bff; font-size: 22px; }"); // Điều chỉnh khoảng cách icon
+        out.println(".info-item i { width: 40px; text-align: center; color: #007bff; font-size: 22px; }");
         out.println("</style>");
         out.println("</head>");
         out.println("<body>");
 
+        // Căn giữa theo cả chiều dọc và ngang
+        out.println("<div class='d-flex justify-content-center align-items-center min-vh-100'>");
         out.println("<div class='container'>");
         out.println("<div class='card'>");
         out.println("<div class='card-header text-center'>");
@@ -74,10 +76,12 @@ public class AboutMe extends HttpServlet {
         out.println("</div>");
         out.println("</div>");
         out.println("</div>");
+        out.println("</div>"); // Kết thúc div căn giữa
 
         out.println("</body>");
         out.println("</html>");
     }
+
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
