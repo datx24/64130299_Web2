@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*Trang đăng nhập*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+.login-box {
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+button i {
+    margin-right: 0.5rem;
+}
+
+/* Trang hồ sơ */
+.profile-container {
+    width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-container h2 i {
+    margin-right: 10px;
+    color: #6a11cb;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    border: 3px solid #6a11cb;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.profile-container p {
+    font-size: 1rem;
+    margin: 15px 0;
+    color: #555;
+}
+
+.profile-container p i {
+    margin-right: 10px;
+    color: #6a11cb; 
+}
+
+.profile-container p strong {
+    color: #333;
+}
+
+.logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05); 
+}
+
+.logout-btn:active {
+    transform: scale(0.95);
+}
+
+.logout-btn i {
+    margin-right: 10px;
+}
+
+/* Trang lỗi */
+.error-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); 
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #ff4757; 
+    border: 1px solid #ffcccc; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.error-container:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.error-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff4757; 
+}
+
+.error-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.error-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.error-container a:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); 
+    transform: scale(1.05); 
+}
+
+.error-container a:active {
+    transform: scale(0.95); 
+}
