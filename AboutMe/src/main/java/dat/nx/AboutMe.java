@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 /**
  * Servlet implementation class AboutMe
  */
-@WebServlet(name = "Home", urlPatterns = {"/Home"})
+@WebServlet(name = "Homeeeeeeee", urlPatterns = {"/Home"})
 public class AboutMe extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
