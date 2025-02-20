@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href='styles.css'>
 <title>Tính tích hai số</title>
 </head>
 <body>
@@ -21,12 +22,12 @@
 			double valueB = Double.parseDouble(strB);
 			
 			double mul = valueA * valueB;
-			out.print("Tích của hai số " + valueA + " và " + valueB + " là: " + mul);
+			out.print("<div class='result'>Tích của hai số " + valueA + " và " + valueB + " là: " + mul + "</div>");
 		}catch(NumberFormatException e) {
-			out.print("Lỗi: Giá trị nhập vào không hợp lệ !");
+			out.print("<div class='error'>Lỗi: Giá trị nhập vào không hợp lệ !</div>");
 		}
 	} else {
-		out.print("Vui lòng nhập cả hai số");
+		out.print("<div class='error'>Vui lòng nhập cả hai số !</div>");
 	}
 	%>
 	</form>

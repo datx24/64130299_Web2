@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
 <title>Phép chia hai số</title>
 </head>
 <body>
@@ -22,16 +23,16 @@
 			double valueB = Double.parseDouble(strB);
 			double div = valueA / valueB;
 			if(valueB == 0) {
-				out.print("Lỗi: Không thể chia hết cho 0 !");
+				out.print("<div class='error'>Lỗi: Không thể chia hết cho 0 !<div>");
 			}
 			else {
-				out.print("Kết quả: " +div);
+				out.print("<div class='result'>Kết quả: " + div +"</div>");
 			}
 		}catch(NumberFormatException e) {
-			out.print("Lỗi: Giá trị nhập không hợp lệ");
+			out.print("<div class='error'>Lỗi: Giá trị nhập không hợp lệ</div>");
 		}
 	} else {
-		out.print("Vui lòng nhập hai số !");
+		out.print("<div class='error'>Vui lòng nhập hai số !</div>");
 	}
 	%>
 	</form>

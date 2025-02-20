@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Tính hiệu hai số</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<form action="Subtraction.jsp" method="get">
@@ -20,12 +21,12 @@
 				double valueA = Double.parseDouble(strA);
 				double valueB = Double.parseDouble(strB);
 				double sub = valueA - valueB;
-				out.print("Hiệu của hai số " + valueA + " và " + valueB + " là: " + sub);
+				out.print("<div class='result'>Hiệu của hai số " + valueA + " và " + valueB + " là: " + sub + "</div>");
 			}catch(NumberFormatException e){
-				out.print("Lỗi: Giá trị nhập vào không hợp lệ");
+				out.print("<div class='error'>Lỗi: Giá trị nhập vào không hợp lệ</div>");
 			}
 		} else {
-			out.print("Vui lòng nhập cả hai số !");
+			out.print("<div class='error'>Vui lòng nhập cả hai số !</div>");
 		}
 	%>
 	</form>
