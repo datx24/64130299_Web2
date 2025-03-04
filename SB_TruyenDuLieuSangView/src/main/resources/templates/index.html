@@ -1,17 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 95%;
+            max-width: 900px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #ff5722;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 6px solid #ff5722;
+            padding: 6px;
+            transition: 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+            border-color: #ff9800;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+
+        p {
+            margin: 12px 0;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        strong {
+            color: #ff5722;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #ff5722;
+            font-size: 22px;
+        }
+    </style>
 </head>
 <body>
-	<h1>Thông tin cá nhân</h1>
-	<p><strong>Họ và tên:</strong> <span th:text="${hoTen}"></span></p>
-	<p><strong>Mã số sinh viên:</strong> <span th:text="${mssv}"></span></p>
-	<p><strong>Năm sinh:</strong> <span th:text="${namSinh}"></span></p>
-	<p><strong>Giới tính:</strong> <span th:text="${gioiTinh}"></span></p>
-	<p><strong>Trường học:</strong> <span th:text="${truongHoc}"></span></p>
-	<p><strong>Lớp:</strong> <span th:text="${lop}"></span></p>
-	<p><strong>Email:</strong> <span th:text="${email}"></span></p>
+    <div class="container">
+        <h1><i class="fas fa-user-circle"></i> Thông tin cá nhân</h1>
+        <div class="flex-container">
+            <img src="/images/avatar.jpg" alt="Profile Image" class="profile-img">
+            <div>
+                <p><i class="fas fa-user icon"></i><strong>Họ và tên:</strong> <span th:text="${hoTen}"></span></p>
+                <p><i class="fas fa-id-badge icon"></i><strong>Mã số sinh viên:</strong> <span th:text="${mssv}"></span></p>
+                <p><i class="fas fa-calendar-alt icon"></i><strong>Năm sinh:</strong> <span th:text="${namSinh}"></span></p>
+                <p><i class="fas fa-venus-mars icon"></i><strong>Giới tính:</strong> <span th:text="${gioiTinh}"></span></p>
+                <p><i class="fas fa-school icon"></i><strong>Trường học:</strong> <span th:text="${truongHoc}"></span></p>
+                <p><i class="fas fa-users icon"></i><strong>Lớp:</strong> <span th:text="${lop}"></span></p>
+                <p><i class="fas fa-envelope icon"></i><strong>Email:</strong> <span th:text="${email}"></span></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
