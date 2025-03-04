@@ -60,5 +60,5 @@
 </p>
 
 <p align="center">
-    <img src="https://github.com/datx24/64130299_Web2/blob/main/Screenshot%202025-03-04%20101141.png" alt="Hello SpringBoot" width="600">
+    <img src="https://github.com/datx24/64130299_Web2/blob/main/ChaoSpringBoot/Screenshot%202025-03-04%20151646.png" alt="Hello SpringBoot" width="600">
 </p>
