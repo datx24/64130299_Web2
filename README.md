@@ -53,7 +53,7 @@
 
 ---
 
-<h1 align="center">Demo Hello SpringBoot</h1>
+<h1 align="center">Bài tập SpringBoot: Hello SpringBoot</h1>
 
 <p align="center">
     🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/ChaoSpringBoot">Xem code trên GitHub</a>
@@ -61,4 +61,16 @@
 
 <p align="center">
     <img src="https://github.com/datx24/64130299_Web2/blob/main/ChaoSpringBoot/Screenshot%202025-03-04%20151646.png" alt="Hello SpringBoot" width="600">
+</p>
+
+---
+
+<h1 align="center">Bài tập SpringBoot: Truyền dữ liệu trừ Controller sang View</h1>
+
+<p align="center">
+    🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/SB_TruyenDuLieuSangView">Xem code trên GitHub</a>
+</p>
+
+<p align="center">
+    <img src="https://github.com/datx24/64130299_Web2/blob/main/SB_TruyenDuLieuSangView/Screenshot%20(4).png" alt="Hello SpringBoot" width="600">
 </p>
