@@ -1,4 +1,7 @@
 <h1 align="center">Bài Tập: About Me</h1>
+
+🔗 [Xem code trên GitHub](https://github.com/datx24/64130299_Web2/tree/main/AboutMe)
+
 <p align="center">
     <img src="https://github.com/datx24/64130299_Web2/blob/main/AboutMe/Screenshot%202025-02-11%20172315.png" alt="About Me" width="600">
 </p>
@@ -6,6 +9,8 @@
 ---
 
 <h1 align="center">Bài Tập: BMI Calculator</h1>
+
+🔗 [Xem code trên GitHub](https://github.com/datx24/64130299_Web2/tree/main/BMI_Serverlet)
 
 <table align="center">
   <tr>
@@ -21,6 +26,8 @@
 ---
 
 <h1 align="center">Bài Tập: Login</h1>
+
+🔗 [Xem code trên GitHub](https://github.com/datx24/64130299_Web2/tree/main/Bai2.2_Login)
 
 <table align="center">
   <tr>
@@ -41,6 +48,9 @@
 ---
 
 <h1 align="center">Demo Hello SpringBoot</h1>
+
+🔗 [Xem code trên GitHub](https://github.com/datx24/64130299_Web2/tree/main/HelloSpringBoot)
+
 <p align="center">
     <img src="https://github.com/datx24/64130299_Web2/blob/main/Screenshot%202025-03-04%20101141.png" alt="Hello SpringBoot" width="600">
 </p>
