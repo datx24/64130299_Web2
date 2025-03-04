@@ -56,7 +56,7 @@
 <h1 align="center">Demo Hello SpringBoot</h1>
 
 <p align="center">
-    🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/HelloSpringBoot">Xem code trên GitHub</a>
+    🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/ChaoSpringBoot">Xem code trên GitHub</a>
 </p>
 
 <p align="center">
