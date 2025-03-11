@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+/* Cấu hình chung */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f7fc, #dce4f7);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container chính */
+.container {
+    margin-top: 50px;
+    max-width: 85%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Hiệu ứng gạch chân gradient */
+h2::after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: linear-gradient(to right, #007bff, #ff6600);
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* Bảng dữ liệu */
+.custom-table {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* Hiệu ứng hover trên bảng */
+.table-hover tbody tr:hover {
+    background-color: #eef3ff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Thiết kế tiêu đề bảng */
+th {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+/* Nội dung bảng */
+td {
+    font-size: 1.1rem;
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Hiệu ứng border mềm mại */
+.table-bordered {
+    border: none;
+}
+
+/* Bóng đổ cho bảng */
+.table {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
