@@ -2,8 +2,11 @@ package edu.datnx.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import edu.datnx.models.SinhVien;
 
+@Service
 public class SinhVienService {
 	public List<SinhVien> getDSSV() {
 		List<SinhVien> dssv = List.of(

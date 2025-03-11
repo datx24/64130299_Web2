@@ -1,5 +1,6 @@
 package edu.datnx.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +11,9 @@ import edu.datnx.service.SinhVienService;
 
 @Controller
 public class TruyenDuLieuController {
-	SinhVienService sinhVienService = new SinhVienService();
+	@Autowired
+	SinhVienService sinhVienService;
+	
 	@GetMapping("/aboutme")
 	public String truyenDuLieu(ModelMap modelMap) {
 		SinhVien sv1 = new SinhVien("64130299", "Nguyễn Xuân Đạt", "Nam", "2004");
