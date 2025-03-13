@@ -111,7 +111,7 @@
       <p><strong>Màn hình Home BMI</strong></p>
     </td>
     <td align="center" width="50%">
-      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/SB_BMI/Screenshot%20(12)." alt="Calculate" width="90%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/SB_BMI/Screenshot%20(12).png" alt="Calculate" width="90%">
       <p><strong>Màn hình Calculate BMI</strong></p>
     </td>
   </tr>
