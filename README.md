@@ -74,3 +74,24 @@
 <p align="center">
     <img src="https://github.com/datx24/64130299_Web2/blob/main/SB_TruyenDuLieuSangView/Screenshot%20(4).png" alt="Hello SpringBoot" width="600">
 </p>
+
+---
+
+<h1 align="center">Bài tập SpringBoot: Login</h1>
+
+<p align="center">
+    🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/SB_Login">Xem code trên GitHub</a>
+</p>
+
+<p align="center">
+    <table align="center">
+      <tr>
+        <td align="center">
+          <img src="https://github.com/datx24/64130299_Web2/blob/main/SB_Login/Screenshot%202025-03-13%20221354.png" alt="Login" width="400">
+        </td>
+        <td align="center">
+          <img src="https://github.com/datx24/64130299_Web2/blob/main/SB_Login/Screenshot%202025-03-13%20221657.png" alt="Home" width="400">
+        </td>
+      </tr>
+    </table>
+</p>
