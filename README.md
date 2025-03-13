@@ -77,21 +77,22 @@
 
 ---
 
-<h1 align="center">Bài tập SpringBoot: Login</h1>
+<h1 align="center">🔐 Bài tập Spring Boot: Login</h1>
 
 <p align="center">
     🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/SB_Login">Xem code trên GitHub</a>
 </p>
 
-<p align="center">
-    <table align="center">
-      <tr>
-        <td align="center">
-          <img src="https://github.com/datx24/64130299_Web2/blob/main/SB_Login/Screenshot%202025-03-13%20221354.png" alt="Login" width="400">
-        </td>
-        <td align="center">
-          <img src="https://github.com/datx24/64130299_Web2/blob/main/SB_Login/Screenshot%202025-03-13%20221657.png" alt="Home" width="400">
-        </td>
-      </tr>
-    </table>
-</p>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/SB_Login/Screenshot%202025-03-13%20221354.png" alt="Login" width="90%">
+      <p><strong>🔑 Màn hình đăng nhập</strong></p>
+    </td>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/SB_Login/Screenshot%202025-03-13%20221657.png" alt="Home" width="90%">
+      <p><strong>🏠 Màn hình Home</strong></p>
+    </td>
+  </tr>
+</table>
+
