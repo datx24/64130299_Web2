@@ -19,10 +19,10 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/datx24/64130299_Web2/blob/main/BMI_Serverlet/Screenshot%202025-02-11%20172837.png" alt="BMI Calculator 1" width="450">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/BMI_Serverlet/Screenshot%202025-02-11%20172837.png" alt="BMI Calculator 1" width="450">
     </td>
     <td align="center">
-      <img src="https://github.com/datx24/64130299_Web2/blob/main/BMI_Serverlet/Screenshot%202025-02-11%20172848.png" alt="BMI Calculator 2" width="450">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/BMI_Serverlet/Screenshot%202025-02-11%20172848.png" alt="BMI Calculator 2" width="450">
     </td>
   </tr>
 </table>
@@ -74,3 +74,25 @@
 <p align="center">
     <img src="https://github.com/datx24/64130299_Web2/blob/main/SB_TruyenDuLieuSangView/Screenshot%20(4).png" alt="Hello SpringBoot" width="600">
 </p>
+
+---
+
+<h1 align="center">🔐 Bài tập Spring Boot: Login</h1>
+
+<p align="center">
+    🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/SB_Login">Xem code trên GitHub</a>
+</p>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/SB_Login/Screenshot%202025-03-13%20221354.png" alt="Login" width="90%">
+      <p><strong>🔑 Màn hình đăng nhập</strong></p>
+    </td>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/SB_Login/Screenshot%202025-03-13%20221657.png" alt="Home" width="90%">
+      <p><strong>🏠 Màn hình Home</strong></p>
+    </td>
+  </tr>
+</table>
+
