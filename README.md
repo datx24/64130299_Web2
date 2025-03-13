@@ -19,10 +19,10 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/datx24/64130299_Web2/blob/main/BMI_Serverlet/Screenshot%202025-02-11%20172837.png" alt="BMI Calculator 1" width="450">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/BMI_Serverlet/Screenshot%202025-02-11%20172837.png" alt="BMI Calculator 1" width="450">
     </td>
     <td align="center">
-      <img src="https://github.com/datx24/64130299_Web2/blob/main/BMI_Serverlet/Screenshot%202025-02-11%20172848.png" alt="BMI Calculator 2" width="450">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/BMI_Serverlet/Screenshot%202025-02-11%20172848.png" alt="BMI Calculator 2" width="450">
     </td>
   </tr>
 </table>
