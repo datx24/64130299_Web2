@@ -9,6 +9,24 @@
 		<h2>Chào mừng<span th:text = "${user}"></span></h2>
 		<p>Bạn đã đăng nhập thành công</p>
 		<a href = "/login">Đăng xuất</a>
+		<table border = "1">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Tên người dùng</th>
+					<th>Giới tính</th>
+					<th>Năm sinh</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each = "user : ${users}" th:object = "${user}">
+					<td th:text = "*{id}"></td>
+					<td th:text = "*{id}"></td>
+					<td th:text = "*{id}"></td>
+					<td th:text = "*{id}"></td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </body>
 </html>
