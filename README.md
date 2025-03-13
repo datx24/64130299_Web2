@@ -96,3 +96,24 @@
   </tr>
 </table>
 
+---
+
+<h1 align="center">🔐 Bài tập Spring Boot: Tính BMI</h1>
+
+<p align="center">
+    🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/SB_BMI">Xem code trên GitHub</a>
+</p>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/SB_BMI/Screenshot%202025-03-13%20235211.png" alt="Home" width="90%">
+      <p><strong>Màn hình Home BMI</strong></p>
+    </td>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/SB_BMI/Screenshot%20(12)." alt="Calculate" width="90%">
+      <p><strong>Màn hình Calculate BMI</strong></p>
+    </td>
+  </tr>
+</table>
+
