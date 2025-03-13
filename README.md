@@ -83,6 +83,12 @@
     🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/SB_Login">Xem code trên GitHub</a>
 </p>
 
+<p align="center">
+    <img src="https://img.shields.io/badge/Java-21-blue?style=flat-square&logo=java">
+    <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=flat-square&logo=spring">
+    <img src="https://img.shields.io/badge/Status-Completed-success?style=flat-square">
+</p>
+
 <table align="center" width="100%">
   <tr>
     <td align="center" width="50%">
@@ -101,7 +107,7 @@
 <h1 align="center">⚖️ Bài tập Spring Boot: Tính BMI</h1>
 
 <p align="center">
-    📂 <a href="https://github.com/datx24/64130299_Web2/tree/main/SB_BMI"><strong>Xem code trên GitHub</strong></a>
+    🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/SB_BMI"><strong>Xem code trên GitHub</strong></a>
 </p>
 
 <p align="center">
