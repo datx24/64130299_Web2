@@ -105,7 +105,7 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Java-17-blue?style=flat-square&logo=java">
+    <img src="https://img.shields.io/badge/Java-21-blue?style=flat-square&logo=java">
     <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=flat-square&logo=spring">
     <img src="https://img.shields.io/badge/Status-Completed-success?style=flat-square">
 </p>
