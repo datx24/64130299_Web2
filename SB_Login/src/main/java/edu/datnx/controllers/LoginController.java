@@ -7,10 +7,18 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import edu.datnx.models.User;
+import edu.datnx.services.UserService;
+
 @Controller
 @RequestMapping("/login")
 public class LoginController {
+	private final UserService userService;
 	
+	public LoginController(UserService userService) {
+		this.userService = userService;
+	}
+
 	@GetMapping
 	public String showLoginForm() {
 		return "login";
@@ -21,7 +29,8 @@ public class LoginController {
 	(@RequestParam String id,
 	 @RequestParam String password, 
 	 Model m) {
-		if("64130299".equals(id) && "Datnx123@".equals(password)) {
+		User user = userService.authenticate(id, password);
+		if(user != null) {
 			m.addAttribute("user",id);
 			return "home"; //Chuyển đến trang home nếu thành công
 		}
