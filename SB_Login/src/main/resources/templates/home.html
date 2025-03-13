@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
+ <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 	<div class="home-container">
-		<h2>Chào mừng<span th:text = "${user}"></span></h2>
+		<h2>Chào mừng <span th:text = "${user}"></span></h2>
 		<p>Bạn đã đăng nhập thành công</p>
 		<a href = "/login">Đăng xuất</a>
 		<table border = "1">
@@ -21,9 +23,9 @@
 			<tbody>
 				<tr th:each = "user : ${users}" th:object = "${user}">
 					<td th:text = "*{id}"></td>
-					<td th:text = "*{id}"></td>
-					<td th:text = "*{id}"></td>
-					<td th:text = "*{id}"></td>
+					<td th:text = "*{name}"></td>
+					<td th:text = "*{birthYear}"></td>
+					<td th:text = "*{gender}"></td>
 				</tr>
 			</tbody>
 		</table>

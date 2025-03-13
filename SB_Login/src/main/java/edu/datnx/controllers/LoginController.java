@@ -1,5 +1,7 @@
 package edu.datnx.controllers;
 
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,8 +32,11 @@ public class LoginController {
 	 @RequestParam String password, 
 	 Model m) {
 		User user = userService.authenticate(id, password);
+		//Lấy danh sách tất cả người dùng
+		List<User> userList = userService.getAllUsers();
 		if(user != null) {
-			m.addAttribute("user",id);
+			m.addAttribute("user",user.getName());
+			m.addAttribute("users",userList);
 			return "home"; //Chuyển đến trang home nếu thành công
 		}
 		m.addAttribute("message","Sai id hoặc mật khẩu !");

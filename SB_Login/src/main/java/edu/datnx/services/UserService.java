@@ -1,5 +1,7 @@
 package edu.datnx.services;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import edu.datnx.models.User;
@@ -20,5 +22,9 @@ public class UserService {
 			return user;
 		}
 		return null;
+	}
+
+	public List<User> getAllUsers() {
+		return userRepository.getAllUsers();
 	}
 }

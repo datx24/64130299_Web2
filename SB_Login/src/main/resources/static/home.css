@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* Import font đẹp */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('/background_login.jpg') no-repeat center center fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Lớp phủ làm mờ */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Màu tối làm mờ nền */
+    backdrop-filter: blur(1px); /* Hiệu ứng làm mờ */
+}
+
+/* Container chính */
+.home-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 500px;
+}
+
+/* Tiêu đề */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Link đăng xuất */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff416c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #ff4b2b;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Bảng dữ liệu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Tiêu đề cột */
+th {
+    background: #ff416c;
+    color: white;
+    padding: 10px;
+}
+
+/* Dữ liệu cột */
+td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Hàng chẵn */
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hiệu ứng hover trên hàng */
+tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
