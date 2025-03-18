@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org" 
+                 xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Spring Boot Layout</title>
+</head>
+<body>
+	<!--Đây là header -->
+	<div th:insert="~{layout/header :: header}"></div>
+	<!--Đây là sidebar -->	
+	<div>SIDEBAR</div>
+	<!-- Đây là nội dung chính truyền vào --> 
+    <div class="content" layout:fragment="content">
+        <!-- Nội dung trang con sẽ chèn vào đây -->
+    </div>
+	<!--Đây là footer -->
+	<div th:insert="~{layout/footer :: footer}"></div>
+</body>
+</html>

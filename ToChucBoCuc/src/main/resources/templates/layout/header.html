@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header class="header" th:fragment="header">
+        <div class="container">
+            <h1>Website Spring Boot</h1>
+            <nav>
+                <ul>
+                    <li><a th:href="@{/}">Trang Chủ</a></li>
+                    <li><a th:href="@{/about}">Giới Thiệu</a></li>
+                    <li><a th:href="@{/contact}">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

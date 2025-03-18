@@ -20,7 +20,7 @@ public class TruyenDuLieuController {
 	public String truyenObject(ModelMap modelMap) {
 		SinhVien sv1 = new SinhVien("64130299", "Nguyễn Xuân Đạt", "Nam", "2004");
 		modelMap.addAttribute("sv",sv1);
-		return "index";
+		return "frontend/pages/index";
 	}
 
 	@GetMapping("/danhsachsinhvien")
