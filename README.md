@@ -134,7 +134,7 @@
 <h1 align="center">🌟 Bài Tập SpringBoot: Tổ chức bố cục giao diện</h1>
 
 <p align="center">
-    🔗 <a href="ttps://github.com/datx24/64130299_Web2/tree/main/ToChucBoCuc"><strong>Xem code trên GitHub</strong></a>
+    🔗 <a href="https://github.com/datx24/64130299_Web2/tree/main/ToChucBoCuc"><strong>Xem code trên GitHub</strong></a>
 </p>
 
 <p align="center">
@@ -145,18 +145,18 @@
 
 <table align="center" width="100%">
   <tr>
-    <td align="center" width="33%">
-      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/blob/main/ToChucBoCuc/localhost_8080_%20(1).png" alt="Home" width="90%">
-      <p><strong>🏠 Trang Chủ</strong></p>
-    </td>
-    <td align="center" width="33%">
-      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/blob/main/ToChucBoCuc/localhost_8080_about.png" alt="Contact" width="90%">
-      <p><strong>📞 Trang Liên Hệ</strong></p>
-    </td>
-    <td align="center" width="33%">
-      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/blob/main/ToChucBoCuc/localhost_8080_contact.png" alt="About" width="90%">
-      <p><strong>ℹ️ Trang Thông Tin Về Chúng Tôi</strong></p>
-    </td>
-  </tr>
+        <td align="center" width="33%">
+          <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/ToChucBoCuc/localhost_8080_%20(1).png" alt="Home" width="90%">
+          <p><strong>🏠 Trang Chủ</strong></p>
+        </td>
+        <td align="center" width="33%">
+          <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/ToChucBoCuc/localhost_8080_contact.png" alt="Contact" width="90%">
+          <p><strong>📞 Trang Liên Hệ</strong></p>
+        </td>
+        <td align="center" width="33%">
+          <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/main/ToChucBoCuc/localhost_8080_about.png" alt="About" width="90%">
+          <p><strong>ℹ️ Trang Thông Tin Về Chúng Tôi</strong></p>
+        </td>
+    </tr>
 </table>
 
