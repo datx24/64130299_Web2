@@ -1,5 +1,17 @@
-	<header class="header" th:fragment="header">
-        <div class="container">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header class="header" th:fragment="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img th:src="@{/images/logo.png}" alt="Logo" />
+            </div>
+            
+            <!-- Navigation -->
             <nav>
                 <ul>
                     <li><a th:href="@{/}">Trang Chủ</a></li>
@@ -7,5 +19,15 @@
                     <li><a th:href="@{/contact}">Liên Hệ</a></li>
                 </ul>
             </nav>
+            
+            <!-- Thanh tìm kiếm -->
+            <div class="search-bar">
+                <form action="/search" method="get">
+                    <input type="text" name="query" placeholder="Tìm kiếm..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
         </div>
-	</header>
+    </header>
+</body>
+</html>

@@ -7,11 +7,42 @@
     <title>Trang Chủ</title>
 </head>
 <body>
-
     <div layout:fragment="content">
-        <h1>Chào mừng đến với Trang Chủ</h1>
-        <p>Đây là nội dung của trang index.</p>
+        <!-- Phần chào mừng -->
+        <section class="welcome-section">
+            <h1>Chào mừng đến với Trang Chủ</h1>
+            <p>Khám phá các giải pháp công nghệ hiện đại và sáng tạo cùng chúng tôi. Chúng tôi cam kết mang lại giá trị tốt nhất cho bạn!</p>
+            <a href="/about" class="btn-cta">Tìm hiểu thêm</a>
+        </section>
+
+        <!-- Phần dịch vụ nổi bật -->
+        <section class="services-section">
+            <h2>Dịch vụ nổi bật</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Phát triển phần mềm</h3>
+                    <p>Chúng tôi cung cấp các giải pháp phần mềm tùy chỉnh, đáp ứng mọi nhu cầu của doanh nghiệp bạn.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Điện toán đám mây</h3>
+                    <p>Tối ưu hóa quy trình với các dịch vụ đám mây an toàn, hiệu quả và tiết kiệm chi phí.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>An ninh mạng</h3>
+                    <p>Bảo vệ dữ liệu của bạn với các giải pháp an ninh mạng tiên tiến và đáng tin cậy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần lời kêu gọi hành động -->
+        <section class="cta-section">
+            <h2>Bạn đã sẵn sàng để bắt đầu?</h2>
+            <p>Liên hệ với chúng tôi ngay hôm nay để nhận tư vấn miễn phí!</p>
+            <a href="/contact" class="btn-cta">Liên hệ ngay</a>
+        </section>
     </div>
-    
 </body>
 </html>

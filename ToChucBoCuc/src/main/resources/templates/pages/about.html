@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<html lang="vi" 
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/main_layout}">
 <head>
 <meta charset="UTF-8">
 <title>Thông tin</title>
 </head>
 <body>
-	<h1>THÔNG TIN VỀ CHÚNG TÔI</h1>
+	<div layout:fragment="content">
+		<h1>THÔNG TIN VỀ CHÚNG TÔI</h1>
+		<p>
+            Chúng tôi là một đội ngũ đam mê công nghệ, chuyên cung cấp các giải pháp phần mềm hiện đại và hiệu quả. 
+            Với sứ mệnh mang lại giá trị tốt nhất cho khách hàng, chúng tôi luôn nỗ lực cải tiến và đổi mới.
+        </p>
+        <h2>Sứ mệnh của chúng tôi</h2>
+        <p>
+            Tạo ra các sản phẩm công nghệ giúp doanh nghiệp phát triển bền vững và tối ưu hóa quy trình làm việc.
+        </p>
+        <h2>Tầm nhìn</h2>
+        <p>
+            Trở thành công ty công nghệ hàng đầu tại Việt Nam, mang lại các giải pháp sáng tạo cho thị trường toàn cầu.
+        </p>
+	</div>
 </body>
 </html>

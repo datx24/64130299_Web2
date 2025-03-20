@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<html lang="vi" 
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/main_layout}">
 <head>
 <meta charset="UTF-8">
 <title>Liên hệ</title>
 </head>
 <body>
-	<h1>LIÊN HỆ</h1>
+	<div layout:fragment="content">
+		<h1>LIÊN HỆ</h1>
+		<p>Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với chúng tôi qua thông tin dưới đây hoặc gửi tin nhắn qua form.</p>
+        
+        <h2>Thông tin liên hệ</h2>
+        <ul>
+            <li><strong>Email:</strong> contact@company.com</li>
+            <li><strong>Điện thoại:</strong> (+84) 123 456 789</li>
+            <li><strong>Địa chỉ:</strong> 123 Đường Công Nghệ, Quận 1, TP. Hồ Chí Minh</li>
+        </ul>
+        
+        <h2>Gửi tin nhắn cho chúng tôi</h2>
+        <form th:action="@{/contact}" method="post">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email" required />
+            </div>
+            <div class="form-group">
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" placeholder="Nhập tin nhắn của bạn" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Gửi</button>
+        </form>
+	</div>
 </body>
 </html>
