@@ -129,4 +129,34 @@
   </tr>
 </table>
 
+---
+
+<h1 align="center">🌟 Bài Tập SpringBoot: Tổ chức bố cục giao diện</h1>
+
+<p align="center">
+    🔗 <a href="ttps://github.com/datx24/64130299_Web2/tree/main/ToChucBoCuc"><strong>Xem code trên GitHub</strong></a>
+</p>
+
+<p align="center">
+    <img src="https://img.shields.io/badge/Java-21-blue?style=flat-square&logo=java">
+    <img src="https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=flat-square&logo=spring">
+    <img src="https://img.shields.io/badge/Status-Completed-success?style=flat-square">
+</p>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/blob/main/ToChucBoCuc/localhost_8080_%20(1).png" alt="Home" width="90%">
+      <p><strong>🏠 Trang Chủ</strong></p>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/blob/main/ToChucBoCuc/localhost_8080_about.png" alt="Contact" width="90%">
+      <p><strong>📞 Trang Liên Hệ</strong></p>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://raw.githubusercontent.com/datx24/64130299_Web2/blob/main/ToChucBoCuc/localhost_8080_contact.png" alt="About" width="90%">
+      <p><strong>ℹ️ Trang Thông Tin Về Chúng Tôi</strong></p>
+    </td>
+  </tr>
+</table>
 
