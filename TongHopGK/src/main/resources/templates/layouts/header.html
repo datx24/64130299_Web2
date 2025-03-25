@@ -1,58 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Header</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .nav ul {
-            list-style: none;
-            display: flex;
-        }
-        .nav ul li {
-            margin: 0 15px;
-        }
-        .nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .nav ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header class="header">
-        <div class="logo">MyWebsite</div>
-        <nav class="nav">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+ <header class="header">
+        <nav class="nav d-flex justify-content-center align-items-center">
+            <ul class="d-flex list-unstyled mb-0">
+                <li class="mx-3"><a th:href="@{/}">Home</a></li>
+                <li class="mx-3"><a th:href="@{/about}">About</a></li>
+                <li class="mx-3"><a th:href="@{/studentlist}">List</a></li>
+                <li class="mx-3"><a th:href="@{/addnew}">AddNew</a></li>
             </ul>
         </nav>
-    </header>
-</body>
-</html>
+</header>

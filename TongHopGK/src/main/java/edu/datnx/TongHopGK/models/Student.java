@@ -34,4 +34,10 @@ public class Student {
     public void setAverageGrade(double averageGrade) {
         this.averageGrade = averageGrade;
     }
+
+	@Override
+	public String toString() {
+		return "Student [mssv=" + mssv + ", fullName=" + fullName + ", averageGrade=" + averageGrade + "]";
+	}
+    
 }

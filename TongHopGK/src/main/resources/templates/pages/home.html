@@ -57,16 +57,7 @@
     </div>
     
     <!-- Header Navigation -->
-    <header class="header">
-        <nav class="nav d-flex justify-content-center align-items-center">
-            <ul class="d-flex list-unstyled mb-0">
-                <li class="mx-3"><a th:href="@{/}">Home</a></li>
-                <li class="mx-3"><a th:href="@{/about}">About</a></li>
-                <li class="mx-3"><a th:href="@{/studentlist}">List</a></li>
-                <li class="mx-3"><a th:href="@{/addnew}">AddNew</a></li>
-            </ul>
-        </nav>
-    </header>
+   <div th:insert="~{layouts/header}"></div>
     
     <!-- Main Content -->
     <div class="container mt-4">
