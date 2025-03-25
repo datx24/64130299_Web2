@@ -62,8 +62,8 @@
             <ul class="d-flex list-unstyled mb-0">
                 <li class="mx-3"><a th:href="@{/}">Home</a></li>
                 <li class="mx-3"><a th:href="@{/about}">About</a></li>
-                <li class="mx-3"><a th:href="@{/services}">Services</a></li>
-                <li class="mx-3"><a th:href="@{/contact}">Contact</a></li>
+                <li class="mx-3"><a th:href="@{/studentlist}">List</a></li>
+                <li class="mx-3"><a th:href="@{/addnew}">AddNew</a></li>
             </ul>
         </nav>
     </header>
@@ -74,7 +74,7 @@
             <!-- Left column 7/12 -->
             <div class="col-md-7">
                 <h2>Main Content</h2>
-                <p th:text="${mainContent}">This is the main content area where you can add articles, blog posts, or any other information.</p>
+                <p>This is the main content area where you can add articles, blog posts, or any other information.</p>
             </div>
             <!-- Right column (Sidebar) 3/12 with offset 2 -->
             <div class="col-md-3 offset-md-2">
@@ -86,7 +86,7 @@
     
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 <span th:text="${websiteName}">MyWebsite</span>. All rights reserved.</p>
+        <p>&copy; 2025 <span>Nguyễn Xuân Đạt</span></p>
     </footer>
 </body>
 </html>
