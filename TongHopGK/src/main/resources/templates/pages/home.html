@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
             color: white;
             padding: 15px 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
         .logo {
@@ -51,33 +51,42 @@
     </style>
 </head>
 <body>
+    <!-- Logo Top Center -->
+    <div class="text-center">
+         <img src="https://www.ntu.edu.vn/Portals/6/ntu.edu.vn.png?ver=ckjn5juE3seliaBQFD_5vA%3d%3d" class="img-fluid" alt="Logo"/>
+    </div>
+    
+    <!-- Header Navigation -->
     <header class="header">
-        <div class="logo">Đạt</div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="nav d-flex justify-content-center align-items-center">
+            <ul class="d-flex list-unstyled mb-0">
+                <li class="mx-3"><a th:href="@{/}">Home</a></li>
+                <li class="mx-3"><a th:href="@{/about}">About</a></li>
+                <li class="mx-3"><a th:href="@{/services}">Services</a></li>
+                <li class="mx-3"><a th:href="@{/contact}">Contact</a></li>
             </ul>
         </nav>
     </header>
     
+    <!-- Main Content -->
     <div class="container mt-4">
         <div class="row">
+            <!-- Left column 7/12 -->
             <div class="col-md-7">
                 <h2>Main Content</h2>
-                <p>This is the main content area where you can add articles, blog posts, or any other information.</p>
+                <p th:text="${mainContent}">This is the main content area where you can add articles, blog posts, or any other information.</p>
             </div>
+            <!-- Right column (Sidebar) 3/12 with offset 2 -->
             <div class="col-md-3 offset-md-2">
-                <h3>Sidebar</h3>
-                <p>This is the sidebar section for additional links, advertisements, or widgets.</p>
+                <h3>Chó</h3>
+                <img src="https://upanh123.com/wp-content/uploads/2020/11/hinh-anh-cho-cute3-1024x887.jpg" class="img-fluid" alt="Cute Dog Image"/>
             </div>
         </div>
     </div>
     
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+        <p>&copy; 2025 <span th:text="${websiteName}">MyWebsite</span>. All rights reserved.</p>
     </footer>
 </body>
 </html>
