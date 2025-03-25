@@ -21,4 +21,13 @@ public class StudentService {
     	
         return studentList;
     }
+    public boolean addNewStudent(Student student) {
+    	try {
+    		studentList.add(student);
+        	return true;
+		} catch (Exception e) {
+			return false;
+		}
+   
+    }
 }
