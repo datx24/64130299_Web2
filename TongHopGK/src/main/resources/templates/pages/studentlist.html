@@ -62,11 +62,25 @@
     <!-- Main Content -->
     <div class="container mt-4">
         <div class="row">
-            <!-- Left column 7/12 -->
-            <div class="col-md-7">
-                <h2>Main Content</h2>
-                <p>This is the main content area where you can add articles, blog posts, or any other information.</p>
-            </div>
+    <!-- Left column 7/12 -->
+	<div class="col-md-7">
+	    <table class="table table-bordered table-striped">
+	        <thead class="table-dark">
+	            <tr>
+	                <th>MSSV</th>
+	                <th>Họ và tên</th>
+	                <th>Điểm trung bình</th>
+	            </tr>
+	        </thead>
+	        <tbody>
+	            <tr th:each="sv : ${students}">
+	                <td th:text="${sv.mssv}"></td>
+	                <td th:text="${sv.fullName}"></td>
+	                <td th:text="${sv.averageGrade}"></td>
+	            </tr>
+	        </tbody>
+	    </table>
+	</div>
             <div th:insert="~{components/sidebar}"  class="col-md-3 offset-md-2"></div>
         </div>
     </div>

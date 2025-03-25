@@ -2,6 +2,7 @@ package edu.datnx.TongHopGK.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import edu.datnx.TongHopGK.services.StudentService;
@@ -23,8 +24,15 @@ public class HomeController {
 	public String about() {
 		return "pages/about";
 	}
+	
+	@GetMapping("/addnew")
+	public String addNew() {
+		return "pages/addNew";
+	}
+	
 	@GetMapping("/studentlist")
-	public String studentlist() {
+	public String studentlist(ModelMap m) {
+		m.addAttribute("students", studentService.getAllStudents());
 		return "pages/studentlist";
 	}
 }
