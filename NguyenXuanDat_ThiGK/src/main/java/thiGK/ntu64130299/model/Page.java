@@ -11,7 +11,10 @@ public class Page {
 	private String content;
 	private int parentPageId;
 	
+	private static List<Page> pages = new ArrayList<>();
 	
+	 // Default constructor
+    public Page() {}
 	
 	public Page(String id, String pageName, int parentPageId) {
 		this.id = id;
@@ -33,6 +36,17 @@ public class Page {
             System.out.println("ID: " + page.getId() + ", Name: " + page.getPageName());
         }
     }
+    
+    // Method to add a new page
+    public static boolean addNewPage(Page page) {
+        return pages.add(page);
+    }
+
+    // Method to get all pages
+    public static List<Page> getAllPages() {
+        return pages;
+    }
+    
 	public String getId() {
 		return id;
 	}
