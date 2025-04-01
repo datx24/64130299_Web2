@@ -21,6 +21,7 @@ import thiGK.ntu64130299.service.PostService;
 public class DashBoardController {
 	@Autowired
 	private PageService pageService;
+	@Autowired
 	private PostService postService;
 	private List<Page> pages = Page.getSamplePages();
 
@@ -36,7 +37,7 @@ public class DashBoardController {
 		return "page/all";
 	}
 
-	@GetMapping("/page/addNew")
+	@GetMapping("/page/new")
 	public String showAddNewPageForm(ModelMap model) {
 		model.addAttribute("page", new Page()); // Create a new Page object for the form
 		return "page/new"; // Return the form template for adding a new page
@@ -68,7 +69,7 @@ public class DashBoardController {
     }
 
     // Hiển thị form thêm bài viết mới
-    @GetMapping("/post/addNew")
+    @GetMapping("/post/new")
     public String showAddNewPostForm(ModelMap model) {
         model.addAttribute("post", new Post("", "", "", 0));
         return "post/new";
@@ -77,6 +78,7 @@ public class DashBoardController {
     // Xử lý thêm bài viết mới
     @PostMapping("/post/new")
     public String addNewPost(
+    		ModelMap model,
             @RequestParam("id") String id,
             @RequestParam("title") String title,
             @RequestParam("content") String content,
@@ -90,6 +92,8 @@ public class DashBoardController {
         } else {
             redirectAttributes.addFlashAttribute("error", "Thêm bài viết thất bại!");
         }
+        
+        model.addAttribute("posts", postService.getAllPosts());
 
         return "post/all";
     }

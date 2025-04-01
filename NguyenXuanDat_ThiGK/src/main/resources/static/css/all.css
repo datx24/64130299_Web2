@@ -1,70 +1,138 @@
-@charset "UTF-8";
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
-#wrapper {
-    display: flex;
+/* Header */
+#header {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    position: relative;
+    padding: 10px 20px; /* Adjusted padding for better spacing */
 }
 
+#header h1 {
+    font-size: 1.8rem; /* Increase size of header text */
+    margin: 0;
+    text-align: left;
+}
+
+/* Footer */
+#footer {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Sidebar */
 #sidebar-wrapper {
     width: 250px;
-    min-height: 100vh;
     background-color: #343a40;
     padding: 20px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
-#sidebar-wrapper h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-#sidebar-wrapper ul li {
-    padding: 10px 0;
-}
-
-#sidebar-wrapper ul li a {
+/* Sidebar Links */
+#sidebar-wrapper a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
-    display: block;
-    padding: 10px;
-    transition: 0.3s;
-}
-
-#sidebar-wrapper ul li a:hover {
-    background-color: #495057;
-    border-radius: 5px;
-}
-
-#page-content-wrapper {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-title {
     font-size: 18px;
-    font-weight: bold;
+    display: block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.card-text {
-    font-size: 16px;
-    color: #6c757d;
+#sidebar-wrapper a:hover {
+    background-color: #495057;
 }
 
-canvas {
-    background: white;
-    border-radius: 10px;
-    padding: 10px;
+/* Main content */
+#page-content-wrapper {
+    margin-left: 250px; /* Ensure content doesn't overlap the sidebar */
+    padding: 30px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Table styles */
+.table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+/* Buttons */
+.btn-sm {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn-info, .btn-warning, .btn-danger {
+    margin-right: 10px;
+}
+
+/* Customize the container */
+.container {
+    max-width: 1200px; /* Adjust max-width as needed */
+    width: 100%;
+    padding-right: 15px; /* Add padding to the right */
+    padding-left: 15px; /* Add padding to the left */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Make the container full width on smaller screens */
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #sidebar-wrapper {
+        width: 200px; /* Reduce sidebar width on mobile */
+    }
+
+    #page-content-wrapper {
+        margin-left: 0; /* Adjust margin for mobile devices */
+    }
+
+    #header h1 {
+        font-size: 1.5rem; /* Slightly reduce font size for mobile */
+    }
+}
+
+/* For large screens */
+@media (min-width: 1024px) {
+    #sidebar-wrapper {
+        width: 300px; /* Wider sidebar for larger screens */
+    }
+
+    #page-content-wrapper {
+        margin-left: 300px; /* Adjust for wider sidebar */
+    }
 }
