@@ -5,6 +5,8 @@ public class Student {
 	public String name;
 	public String groupId;
 	
+	public Student() {};
+	
 	public Student(String id, String name, String groupId) {
 		super();
 		this.id = id;

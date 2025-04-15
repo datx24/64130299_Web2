@@ -23,6 +23,7 @@ public class TopicRepository {
             new Topic("10", "Khoa học máy tính nâng cao", "j_192", "Khoa học máy tính")
     ));
 	
+	//Hiện danh sách topic
 	public List<Topic> findAll(){
 		return topics;
 	}

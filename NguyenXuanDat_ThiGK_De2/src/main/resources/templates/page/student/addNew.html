@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/main.html :: head"></head>
+<body>
+	<div th:replace="layout/main.html :: body">
+		<section>
+			<h2>Thêm mới Student</h2>
+			<form th:action="@{/student/save}" th:object="${student}" method="post">
+				<div class="mb-3">
+					<label class="form-label">ID</label> <input type="text"
+						class="form-control" th:field="*{id}" required>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Name</label> <input type="text"
+						class="form-control" th:field="*{name}" required>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Group Id</label> <input type="text"
+						class="form-control" th:field="*{groupId}" required>
+				</div>
+				<button type="submit" class="btn btn-primary">Lưu</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
