@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/main.html :: head"></head>
+<body>
+	<div th:replace="layout/main.html :: body">
+		<section>
+			<h2>Thêm mới Topic</h2>
+			<form th:action="@{/topic/save}" th:object="${topic}" method="post">
+				<div class="mb-3">
+					<label class="form-label">ID</label> <input type="text"
+						class="form-control" th:field="*{id}" required>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Topic Name</label> <input type="text"
+						class="form-control" th:field="*{topicName}" required>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Supervisor Id</label> <input type="text"
+						class="form-control" th:field="*{supervisorId}" required>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Topic Type</label> <input type="text"
+						class="form-control" th:field="*{topicType}" required>
+				</div>
+				<button type="submit" class="btn btn-primary">Lưu</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>

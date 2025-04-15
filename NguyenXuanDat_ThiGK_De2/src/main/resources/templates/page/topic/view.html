@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/main.html :: head"></head>
+<body>
+	<div th:replace="layout/main.html :: body">
+		<section>
+			<h2>Detail Topic</h2>
+			<p>
+				<strong>ID:</strong> <span th:text="${topic.id}"></span>
+			</p>
+			<p>
+				<strong>Topic Name:</strong> <span th:text="${topic.topicName}"></span>
+			</p>
+			<p>
+				<strong>Supervisor Id:</strong> <span
+					th:text="${topic.supervisorId}"></span>
+			</p>
+			<p>
+				<strong>Topic Type:</strong> <span th:text="${topic.topicType}"></span>
+			</p>
+			<a th:href="@{/topic/all}" class="btn btn-secondary">Quay lại</a>
+		</section>
+	</div>
+</body>
+</html>

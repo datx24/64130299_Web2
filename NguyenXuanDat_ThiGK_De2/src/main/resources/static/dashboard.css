@@ -1,0 +1,23 @@
+@charset "UTF-8";
+#wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar-wrapper {
+    min-width: 250px;
+    transition: all 0.3s;
+}
+
+#page-content-wrapper {
+    flex: 1;
+    overflow-x: hidden;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px;
+}
+
+.list-group-item:hover {
+    background-color: #495057;
+}
